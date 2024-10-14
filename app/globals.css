@@ -2,10 +2,286 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Yekan Bakh Fat";
+  src: url("/public/fonts/YekanBakh-Fat.eot");
+  src: local("/public/fonts/YekanBakh-Fat"),
+    url("/public/fonts/YekanBakh-Fat.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Fat.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Fat.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Fat.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Medium.eot");
+  src: local("/public/fonts/YekanBakh-Medium"),
+    url("/public/fonts/YekanBakh-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Medium.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Medium.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Bold.eot");
+  src: local("/public/fonts/YekanBakh-Bold"),
+    url("/public/fonts/YekanBakh-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Bold.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Bold.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Light.eot");
+  src: local("/public/fonts/YekanBakh-Light"),
+    url("/public/fonts/YekanBakh-Light.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Light.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Light.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Heavy.eot");
+  src: local("/public/fonts/YekanBakh-Heavy"),
+    url("/public/fonts/YekanBakh-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Heavy.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Heavy.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Thin.eot");
+  src: local("/public/fonts/YekanBakh-Thin"),
+    url("/public/fonts/YekanBakh-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Thin.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Thin.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/public/fonts/YekanBakh-Regular.eot");
+  src: local("/public/fonts/YekanBakh-Regular"),
+    url("/public/fonts/YekanBakh-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Regular.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Regular.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yekan Bakh Hairline";
+  src: url("/public/fonts/YekanBakh-Hairline.eot");
+  src: local("/public/fonts/YekanBakh-Hairline"),
+    url("/public/fonts/YekanBakh-Hairline.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/YekanBakh-Hairline.woff2") format("woff2"),
+    url("/public/fonts/YekanBakh-Hairline.woff") format("woff"),
+    url("/public/fonts/YekanBakh-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AnjumanFaNum";
+  src: url("/public/fonts/Anjoman-FaNum-Bold-f965d826.woff2");
+  src: local("/public/fonts/Anjoman-FaNum-Bold-f965d826"),
+    url("/public/fonts/Anjoman-FaNum-Bold-f965d826.woff2") format("woff2"),
+    url("/public/fonts/Anjoman-FaNum-Bold-f965d826.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnjumanFaNum";
+  src: url("/public/fonts/Anjoman-FaNum-Medium-6ecc7777.ttf");
+  src: local("/public/fonts/Anjoman-FaNum-Medium-6ecc7777"),
+    url("/public/fonts/Anjoman-FaNum-Medium-6ecc7777.woff2") format("woff2"),
+    url("/public/fonts/Anjoman-FaNum-Medium-6ecc7777.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnjumanFaNum";
+  src: url("/public/fonts/Anjoman-FaNum-Bold-f965d826.woff2");
+  src: local("/public/fonts/Anjoman-FaNum-Bold-f965d826"),
+    url("/public/fonts/Anjoman-FaNum-Bold-f965d826.woff2") format("woff2"),
+    url("/public/fonts/Anjoman-FaNum-Bold-f965d826.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --barenj-primary-light: #3b6b66;
+  --barenj-secondary-light: #121212;
+  --text-activate: #fff;
+  /* CSS HEX */
+  --french-gray: #a8acb7ff;
+  --cadet-gray: #99a0b0ff;
+  --platinum: #d9d9d9ff;
+  --french-gray-2: #d2d5dbff;
+  --slate-gray: #717687ff;
+  --charcoal: #3d4257ff;
+  --platinum-2: #d7d7daff;
+  --platinum-3: #d9d9d9ff;
+
+  /* space-cadet */
+  --space-cadet-0: #30374d;
+  --space-cadet-100: #0a0b10;
+  --space-cadet-200: #14161f;
+  --space-cadet-300: #1d222f;
+  --space-cadet-400: #272d3f;
+  --space-cadet-500: #30374d;
+  --space-cadet-600: #4f597d;
+  --space-cadet-700: #727ea7;
+  --space-cadet-800: #a1a9c4;
+  --space-cadet-900: #d0d4e2;
+
+  /* CSS HSL */
+  --french-gray: hsla(224, 9%, 69%, 1);
+  --cadet-gray: hsla(222, 13%, 65%, 1);
+  --platinum: hsla(0, 0%, 85%, 1);
+  --french-gray-2: hsla(220, 11%, 84%, 1);
+  --slate-gray: hsla(226, 9%, 49%, 1);
+  --charcoal: hsla(228, 18%, 29%, 1);
+  --platinum-2: hsla(240, 4%, 85%, 1);
+  --platinum-3: hsla(0, 0%, 85%, 1);
+  --platinum-4: hsla(0, 0%, 85%, 1);
+}
+:root {
+  --oxford-blue-default: #01143d;
+  --oxford-blue-100: #00040c;
+  --oxford-blue-200: #000818;
+  --oxford-blue-300: #010c24;
+  --oxford-blue-400: #011030;
+  --oxford-blue-500: #01143d;
+  --oxford-blue-600: #023195;
+  --oxford-blue-700: #044eed;
+  --oxford-blue-800: #4e85fc;
+  --oxford-blue-900: #a7c2fe;
+
+  --cadet-gray-default: #99a0b0;
+  --cadet-gray-100: #1d1f25;
+  --cadet-gray-200: #3a3f4b;
+  --cadet-gray-300: #575e70;
+  --cadet-gray-400: #757e95;
+  --cadet-gray-500: #99a0b0;
+  --cadet-gray-600: #aeb4c1;
+  --cadet-gray-700: #c2c7d0;
+  --cadet-gray-800: #d7d9e0;
+  --cadet-gray-900: #ebecef;
+
+  --mint-green-default: #c1ddda;
+  --mint-green-100: #1d3533;
+  --mint-green-200: #3b6b66;
+  --mint-green-300: #58a099;
+  --mint-green-400: #8bbfba;
+  --mint-green-500: #c1ddda;
+  --mint-green-600: #cde3e1;
+  --mint-green-700: #d9eae9;
+  --mint-green-800: #e6f1f0;
+  --mint-green-900: #f2f8f8;
+
+  --french-gray-default: #d2d5db;
+  --french-gray-100: #262930;
+  --french-gray-200: #4c535f;
+  --french-gray-300: #737c8e;
+  --french-gray-400: #a2a8b5;
+  --french-gray-500: #d2d5db;
+  --french-gray-600: #dbdde2;
+  --french-gray-700: #e4e6e9;
+  --french-gray-800: #edeef0;
+  --french-gray-900: #f6f7f8;
+
+  --oxford-blue-three-default: #061233;
+  --oxford-blue-three-100: #01040a;
+  --oxford-blue-three-200: #020714;
+  --oxford-blue-three-300: #040b1e;
+  --oxford-blue-three-400: #050e28;
+  --oxford-blue-three-500: #061233;
+  --oxford-blue-three-600: #0f2e83;
+  --oxford-blue-three-700: #194bd5;
+  --oxford-blue-three-800: #5d83ec;
+  --oxford-blue-three-900: #aec1f5;
+
+  --platinum-default: #d7d7da;
+  --platinum-100: #2a2a2d;
+  --platinum-200: #53535a;
+  --platinum-300: #7d7d87;
+  --platinum-400: #aaaab1;
+  --platinum-500: #d7d7da;
+  --platinum-600: #dfdfe2;
+  --platinum-700: #e7e7e9;
+  --platinum-800: #efeff0;
+  --platinum-900: #f7f7f8;
+
+  --platinum-two-default: #d9d9d9;
+  --platinum-two-100: #2b2b2b;
+  --platinum-two-200: #575757;
+  --platinum-two-300: #828282;
+  --platinum-two-400: #adadad;
+  --platinum-two-500: #d9d9d9;
+  --platinum-two-600: #e0e0e0;
+  --platinum-two-700: #e8e8e8;
+  --platinum-two-800: #f0f0f0;
+  --platinum-two-900: #f7f7f7;
+
+  --oxford-blue-two-default: #0c1736;
+  --oxford-blue-two-100: #02050b;
+  --oxford-blue-two-200: #050916;
+  --oxford-blue-two-300: #070e21;
+  --oxford-blue-two-400: #0a132b;
+  --oxford-blue-two-500: #0c1736;
+  --oxford-blue-two-600: #1c367f;
+  --oxford-blue-two-700: #2c55c8;
+  --oxford-blue-two-800: #6d8cdf;
+  --oxford-blue-two-900: #b6c5ef;
+
+  --cool-gray-default: #7b7f97;
+  --cool-gray-100: #18191f;
+  --cool-gray-200: #30323e;
+  --cool-gray-300: #494c5d;
+  --cool-gray-400: #61657b;
+  --cool-gray-500: #7b7f97;
+  --cool-gray-600: #9699ac;
+  --cool-gray-700: #b0b3c1;
+  --cool-gray-800: #caccd6;
+  --cool-gray-900: #e5e6ea;
+
+
+  /* create theme with tailwind css */
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+  --color-text-base: hsl(0, 0%, 0%);
+  --color-bg-primary: hsl(0, 0%, 0%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +292,31 @@
   }
 }
 
-body {
+.theme-black {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+}
+.theme-orange {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+}
+
+.theme-green {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+}
+
+.theme-violet {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+}
+
+.theme-blue {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 0%);
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +324,182 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+body {
+  background-color: #fbfbfb;
 }
-
+.ant-form-item-label label {
+  font-family: "Yekan Bakh", sans-serif; /* Apply custom font to form labels */
+}
+.ant-menu-submenu-title {
+  padding-right: 24px;
+  margin: 0px !important;
+  padding-left: 0px !important;
+  width: 100% !important;
+}
+.custom-sidebar
+  .ant-menu-submenu.ant-menu-submenu-inline.ant-menu-submenu-open.ant-menu-submenu-active
+  .ant-menu-submenu-title:hover {
+  color: rgb(44, 44, 84) !important;
+}
+.custom-sidebar .ant-menu-submenu-title:hover {
+  color: rgb(44, 44, 84) !important;
+}
+.basalam {
+  font-family: basalam-icon !important;
+  position: relative;
+}
+.basalam::after {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  content: "";
+  width: 10px;
+  aspect-ratio: 1 / 1;
+  color: var(--gray-700);
+  -webkit-font-smoothing: antialiased;
+}
 @layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(244, 114, 182, 0.4) 0deg,
+      rgba(192, 132, 252, 0.4) 0deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-2px)] w-[calc(100%-2px)] rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900;
+  }
+  
+  .yekan-bakh {
+    font-family: "Yekan Bakh Hairline", sans-serif;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
   .text-balance {
     text-wrap: balance;
+  }
+  .embla {
+    max-width: 48rem;
+    margin: auto;
+    --slide-height: 19rem;
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+  }
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-x pinch-zoom;
+    margin-top: calc(var(--slide-spacing) * -1);
+    height: calc(var(--slide-spacing) + var(--slide-height));
+    flex-direction: column;
+  }
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-height: 0;
+    padding-top: var(--slide-spacing);
+  }
+  .embla__slide__number {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    border-radius: 1.8rem;
+    font-size: 4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .embla__controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+  }
+  .embla__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .embla__button {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .embla__button:disabled {
+    color: var(--detail-high-contrast);
+  }
+  .embla__button__svg {
+    width: 35%;
+    height: 35%;
+  }
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  }
+  .embla__dot {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .embla__dot:after {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: "";
+  }
+  .embla__dot--selected:after {
+    box-shadow: inset 0 0 0 0.2rem var(--text-body);
   }
 }

@@ -1,0 +1,8 @@
+.color {
+    width: 1000px;
+    height: 1000px;
+    background-image: radial-gradient(closest-side, rgba(255, 233, 0, 0.21), #000);
+    position: absolute;
+    top: -570px;
+    left: 15%;
+}

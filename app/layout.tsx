@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import Provider from "@/lib/provider";
+import SidebarMenu from "@/components/layout/sidebar/sidebar-menu";
+import Footer from "@/components/Sticky Footer/footer-type-one";
+import { Col, Row } from "antd";
+import { FaNum, YekanBakh } from "@/utils/customFont";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+// const yekanBakh =
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +27,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          YekanBakh.variable,
+          FaNum.variable,
+          fontSans.variable
+        )}
+      >
+        <Provider>
+            <Row>
+              <Col span={24}>
+                <h1>Header</h1>
+              </Col>
+            </Row>
+          <div className="container">
+            <Row>
+              <Col span={19}>{children}</Col>
+              <Col span={5} className="relative">
+                <SidebarMenu />
+              </Col>
+            </Row>
+          </div>
+            <Row>
+              <Col span={24}>
+                <Footer />
+              </Col>
+            </Row>
+        </Provider>
+      </body>
     </html>
   );
 }
