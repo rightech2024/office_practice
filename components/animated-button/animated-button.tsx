@@ -34,5 +34,4 @@ const AnimatedButton = () => {
 };
 
 export default AnimatedButton;
-
 // Create the PERFECT Button (TailwindCSS - Framer Motion) : video
